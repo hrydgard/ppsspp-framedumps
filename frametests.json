@@ -1,0 +1,22 @@
+{
+	"testRoot": "dumps",
+	"refRoot": "ref",
+	"outputRoot": "out/frametests",
+	"headlessPath": "",
+	"timeout": 60,
+	"maxMse": 0.1,
+	"variants": {
+		"soft": {
+			"args": "--graphics=software",
+			"compare-suffix": "psp"
+		},
+		"vulkan": {
+			"args": "--graphics=vulkan",
+			"compare-suffix": "psp"
+		},
+		"opengl": {
+			"args": "--graphics=opengl",
+			"compare-suffix": "psp"
+		}
+	}
+}
