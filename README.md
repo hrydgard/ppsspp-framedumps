@@ -20,6 +20,7 @@ ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 909 of 
 manifest.json                one entry per dump (see below)
 renames.json                 the original file name of each dump -> its name here
 frametests.json              a config for PPSSPP's frametests.py, comparing against ref/
+KNOWN_DIFFERENCES.md         differences left for later, grouped by cause
 tools/render.py              renders every dump with PPSSPPHeadless
 tools/compare.py             compares renders with the PSP references, or with each other
 ```
