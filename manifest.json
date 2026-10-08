@@ -10720,6 +10720,18 @@
   "notes": []
  },
  {
+  "name": "18667 ULUS10576_0005 Fate Extra Shadow on walls GRAPHIC glitch",
+  "source": "issue",
+  "issue": 18667,
+  "ppssppName": "ULUS10576_0005",
+  "gameId": "ULUS10576",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "18713 NPUH10045_0001 Worms Battle Islands graphic problem",
   "source": "issue",
   "issue": 18713,
