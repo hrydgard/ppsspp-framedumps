@@ -11332,42 +11332,6 @@
   "notes": []
  },
  {
-  "name": "21641 ULES00703_0001 UWP XBOX Burnout Dominator Green sun",
-  "source": "issue",
-  "issue": 21641,
-  "ppssppName": "ULES00703_0001",
-  "gameId": "ULES00703",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
-  "name": "21641 ULES00703_0002 UWP XBOX Burnout Dominator Green sun",
-  "source": "issue",
-  "issue": 21641,
-  "ppssppName": "ULES00703_0002",
-  "gameId": "ULES00703",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
-  "name": "21641 ULES00703_0003 UWP XBOX Burnout Dominator Green sun",
-  "source": "issue",
-  "issue": 21641,
-  "ppssppName": "ULES00703_0003",
-  "gameId": "ULES00703",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
   "name": "21689 UCUS98701_0001 Hot Shots Tennis Get a Grip Everybodys Tennis Portable All",
   "source": "issue",
   "issue": 21689,
