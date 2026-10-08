@@ -511,7 +511,6 @@
  "15896 Kurohyou2 various graphic glitches and gles crash during loa NPJH50562": "15896 NPJH50562_0001 Kurohyou2 various graphic glitches and gles crash during loading",
  "15923 Lens flare effects UCES01184": "15923 UCES01184_0001 Lens flare effects",
  "15923 Lens flare effects UCUS98649": "15923 UCUS98649_0001 Lens flare effects",
- "15923 Lens flare effects ULUS10236": "15923 ULUS10236_0001 Lens flare effects",
  "15931 Rendering glitches Monster Hunter with texture replacement d NPJB40001": "15931 NPJB40001_0001 Rendering glitches Monster Hunter with texture replacement",
  "15959 Resistance Retribution video flicker UCES01184": "15959 UCES01184_0001 Resistance Retribution video flicker",
  "15988 Medievil fps drops UCES00006": "15988 UCES00006_0001 Medievil fps drops",
@@ -948,5 +947,6 @@
  "9576 Kurohyou Ryu Ga Gotoku Shinshou Yakuza - No clipping of 3d c NPJH50333 (3)": "9576 NPJH50333_0003 Kurohyou Ryu Ga Gotoku Shinshou Yakuza No clipping of 3d",
  "9615 Manhunt 2 - minimap problem ULUS10280": "9615 ULUS10280_0001 Manhunt 2 minimap problem",
  "9615 Manhunt 2 - minimap problem ULUS10280 (2)": "9615 ULUS10280_0002 Manhunt 2 minimap problem",
- "9830 Vulkan Simpsons graphics problems on Mali S7 Edge Exynos and ULES00975": "9830 ULES00975_0001 Vulkan Simpsons graphics problems on Mali S7 Edge Exynos and"
+ "9830 Vulkan Simpsons graphics problems on Mali S7 Edge Exynos and ULES00975": "9830 ULES00975_0001 Vulkan Simpsons graphics problems on Mali S7 Edge Exynos and",
+ "ULES00703_0004": "ULES00703_0004 Burnout Dominator car select lens flare"
 }

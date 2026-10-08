@@ -8262,18 +8262,6 @@
   "notes": []
  },
  {
-  "name": "15923 ULUS10236_0001 Lens flare effects",
-  "source": "issue",
-  "issue": 15923,
-  "ppssppName": "ULUS10236_0001",
-  "gameId": "ULUS10236",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
   "name": "15931 NPJB40001_0001 Rendering glitches Monster Hunter with texture replacement",
   "source": "issue",
   "issue": 15931,
@@ -11445,6 +11433,19 @@
   "issue": 22335,
   "ppssppName": "ULJS00281_0001",
   "gameId": "ULJS00281",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00703_0004 Burnout Dominator car select lens flare",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00703_0004",
+  "origin": "recorded in-game, car select screen with the sun in view",
+  "gameId": "ULES00703",
   "gameIdSource": "header",
   "dumpVersion": 6,
   "pspReference": true,
