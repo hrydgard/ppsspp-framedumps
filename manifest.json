@@ -906,6 +906,18 @@
   "notes": []
  },
  {
+  "name": "6379 NPJH50127_0001 Tokimeki Memorial 4 graphic issue",
+  "source": "issue",
+  "issue": 6379,
+  "ppssppName": "NPJH50127_0001",
+  "gameId": "NPJH50127",
+  "gameIdSource": "file name",
+  "dumpVersion": 3,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "6483 ULUS10656_0001 Summon Night 5 Only hand is wire frame",
   "source": "issue",
   "issue": 6483,
