@@ -14,9 +14,9 @@ git clone https://github.com/hrydgard/ppsspp-framedumps.git
 ## What's here
 
 ```
-dumps/<name>.ppdmp           957 frame dumps
-ref/<name>-psp.png           what a PSP displays for that dump (480x272), for 933 of them
-ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 915 of them
+dumps/<name>.ppdmp           953 frame dumps
+ref/<name>-psp.png           what a PSP displays for that dump (480x272), for 929 of them
+ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 911 of them
 manifest.json                one entry per dump (see below)
 renames.json                 the original file name of each dump -> its name here
 frametests.json              a config for PPSSPP's frametests.py, comparing against ref/

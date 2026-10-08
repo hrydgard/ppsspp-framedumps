@@ -906,18 +906,6 @@
   "notes": []
  },
  {
-  "name": "6423 ULUS10063_0001 Prince of Persia Revelations title screen graphic issue",
-  "source": "issue",
-  "issue": 6423,
-  "ppssppName": "ULUS10063_0001",
-  "gameId": "ULUS10063",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
   "name": "6483 ULUS10656_0001 Summon Night 5 Only hand is wire frame",
   "source": "issue",
   "issue": 6483,
@@ -2806,18 +2794,6 @@
   "notes": []
  },
  {
-  "name": "11122 ULES00223_0001 PoP Revelations Funny loading screen when unthrottling",
-  "source": "issue",
-  "issue": 11122,
-  "ppssppName": "ULES00223_0001",
-  "gameId": "ULES00223",
-  "gameIdSource": "header",
-  "dumpVersion": 5,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
   "name": "11123 GOW Chains of Olympus black squares",
   "source": "issue",
   "issue": 11123,
@@ -4339,18 +4315,6 @@
   "gameId": "NPJH00142",
   "gameIdSource": "file name",
   "dumpVersion": 3,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
-  "name": "12210 PoP Revelations-grey screen filter",
-  "source": "issue",
-  "issue": 12210,
-  "ppssppName": null,
-  "gameId": null,
-  "gameIdSource": null,
-  "dumpVersion": 5,
   "pspReference": true,
   "pspDepth": true,
   "notes": []
@@ -6217,18 +6181,6 @@
   "gameId": "NPJH50443",
   "gameIdSource": "header",
   "dumpVersion": 4,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
-  "name": "13465 ULUS10063_0001 Prince of Persia Warrior Within excessive blur",
-  "source": "issue",
-  "issue": 13465,
-  "ppssppName": "ULUS10063_0001",
-  "gameId": "ULUS10063",
-  "gameIdSource": "header",
-  "dumpVersion": 5,
   "pspReference": true,
   "pspDepth": true,
   "notes": []
