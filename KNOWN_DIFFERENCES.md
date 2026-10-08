@@ -28,6 +28,7 @@ Not emulated on purpose for now. Options looked at (2026-10-09):
 | 13950, 17033 God Eater Burst / God Eater 2 | Bloom feeds back on itself; the scene is about 4 levels bright before it |
 | 6963 UCES01242_0001, 15071 UCUS98649 SOCOM | Faint fog layers and a CLUT8 glow on a 5551 frame |
 | 6371, 16131 NPUG80221 Super Stardust (21-24k) | Purple cast after the 2x bloom composite, from the 565 copy of the scene |
+| 16131 UCUS98668 Resistance: Retribution (44-66k), 15923 UCES01184 (51k), 16131 UCUS98641 and 10415 UCES00710 Syphon Filter: Logan's Shadow (1-54k) | Bright pass in a 128x128 5551 buffer: a reverse-subtract threshold that the PSP's truncation takes to 0, then MAX and blur passes, then the high bytes read as CLUT8. Shows as a glowing rectangle over fires |
 | 10421 Harvest Moon, 12964 Ys Seven, 15896 Kurohyou 2, 13782 NPJH50625 Nayuta | Same mechanism, seen in the flooring experiment |
 
 ## Filtering precision
