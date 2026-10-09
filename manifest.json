@@ -8327,6 +8327,30 @@
   ]
  },
  {
+  "name": "15914 ULES00280_0001 SpongeBob The Yellow Avenger",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULES00280_0001",
+  "gameId": "ULES00280",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "15914 ULES00993_0001 MX vs ATV Untamed",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULES00993_0001",
+  "gameId": "ULES00993",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "15923 UCES01184_0001 Lens flare effects",
   "source": "issue",
   "issue": 15923,
