@@ -49,7 +49,6 @@ The GE filters with 4-bit weights and truncates twice. GPUs filter more finely.
 
 | Dumps | Why |
 |---|---|
-| 19318 ULUS10285 Silent Hill Origins | Depth buffer garbage on the left side |
 | 18879 NPJH50443 FF Type-0 | Looks suspicious |
 | 8390 NPJH50333 Kurohyou 2 | Looks suspicious, might be right |
 | 11100, 15923 (removed), 21641 (removed) Burnout Dominator | Old captures with state the game doesn't have; use ULES00703_0004 |
