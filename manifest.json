@@ -1278,6 +1278,18 @@
   "notes": []
  },
  {
+  "name": "7223 ULUS10257_0001 Brooktown High",
+  "source": "recorded",
+  "issue": 7223,
+  "ppssppName": "ULUS10257_0001",
+  "gameId": "ULUS10257",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "7239 UCES00113_0001 Gangs Of London hangup and graphical problem",
   "source": "issue",
   "issue": 7239,
@@ -8250,6 +8262,20 @@
   "pspReference": true,
   "pspDepth": true,
   "notes": []
+ },
+ {
+  "name": "15914 ULES01375_0001 MX vs ATV Reflex race start",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULES01375_0001",
+  "gameId": "ULES01375",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "the PSP reference is missing most of the speed gauge, likely something the recording didn't capture"
+  ]
  },
  {
   "name": "15914 ULUS10428_0001 Cars Race O Rama brightness adaptation",
