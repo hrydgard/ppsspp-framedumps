@@ -12052,10 +12052,10 @@
   "gameId": "ULES01070",
   "gameIdSource": "header",
   "dumpVersion": 6,
-  "pspReference": false,
-  "pspDepth": false,
+  "pspReference": true,
+  "pspDepth": true,
   "notes": [
-   "The recorded display shows the copyright screen while the cutscene is drawn to 04088000; the PSP replayer and PPSSPP disagree on the display format. No PSP reference.",
+   "The recorded display shows the copyright screen (565, its format recorded as 0xcccccc00) while the cutscene is drawn to 04088000. The PSP reference shows the copyright screen, as the display does.",
    "Replayed with run.py --display=04088000,512,3 the PSP shows the cutscene, and the software renderer matches it exactly (0001); Vulkan and OpenGL leave a black 32 px strip on the left."
   ]
  },
@@ -12068,10 +12068,10 @@
   "gameId": "ULES01070",
   "gameIdSource": "header",
   "dumpVersion": 6,
-  "pspReference": false,
-  "pspDepth": false,
+  "pspReference": true,
+  "pspDepth": true,
   "notes": [
-   "The recorded display shows the copyright screen while the cutscene is drawn to 04088000; the PSP replayer and PPSSPP disagree on the display format. No PSP reference.",
+   "The recorded display shows the copyright screen (565, its format recorded as 0xcccccc00) while the cutscene is drawn to 04088000. The PSP reference shows the copyright screen, as the display does.",
    "Replayed with run.py --display=04088000,512,3 the PSP shows the cutscene, and the software renderer matches it exactly (0001); Vulkan and OpenGL leave a black 32 px strip on the left."
   ]
  },
