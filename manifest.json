@@ -462,12 +462,12 @@
   "notes": []
  },
  {
-  "name": "5864 Shadows and Effects on Agarest Senki Mariage",
+  "name": "5864 NPJH50639_0001 Shadows and Effects on Agarest Senki Mariage",
   "source": "issue",
   "issue": 5864,
-  "ppssppName": null,
-  "gameId": null,
-  "gameIdSource": null,
+  "ppssppName": "NPJH50639_0001",
+  "gameId": "NPJH50639",
+  "gameIdSource": "issue",
   "dumpVersion": 2,
   "pspReference": true,
   "pspDepth": true,
