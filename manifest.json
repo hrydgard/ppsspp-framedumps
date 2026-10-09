@@ -12207,5 +12207,35 @@
    "Shadow mapping without depth textures, see ppsspp-re docs/silent-hill-origins-shadow-mapping.md and #16126.",
    "Two frames: the game copies each frame to its display buffer at the start of the next one."
   ]
+ },
+ {
+  "name": "ULES01402_0001 Split Second bloom on the race intro",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01402_0001",
+  "origin": "recorded on the race intro screen",
+  "gameId": "ULES01402",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "The bloom renders badly wrong on Vulkan on an NVIDIA GPU; not reproduced on an M1 (MoltenVK), at 1x-3x or with MSAA."
+  ]
+ },
+ {
+  "name": "ULES01402_0002 Split Second bloom in the race",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01402_0002",
+  "origin": "recorded in-game, at the start of a race",
+  "gameId": "ULES01402",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "The bloom renders badly wrong on Vulkan on an NVIDIA GPU; not reproduced on an M1 (MoltenVK), at 1x-3x or with MSAA."
+  ]
  }
 ]
