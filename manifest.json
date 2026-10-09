@@ -8252,6 +8252,58 @@
   "notes": []
  },
  {
+  "name": "15914 ULUS10428_0001 Cars Race O Rama brightness adaptation",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULUS10428_0001",
+  "gameId": "ULUS10428",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "15914 ULUS10428_0001 Cars Race O Rama too dark recorded on hardware",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULUS10428_0001",
+  "gameId": "ULUS10428",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": [
+   "recorded with a hardware renderer: its framebuffer snapshots hold stale VRAM, so a PSP replay shows noise and has no reference"
+  ]
+ },
+ {
+  "name": "15914 ULUS10428_0002 Cars Race O Rama brightness adaptation",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULUS10428_0002",
+  "gameId": "ULUS10428",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "15914 ULUS10428_0002 Cars Race O Rama too dark recorded on hardware",
+  "source": "recorded",
+  "issue": 15914,
+  "ppssppName": "ULUS10428_0002",
+  "gameId": "ULUS10428",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": [
+   "recorded with a hardware renderer: its framebuffer snapshots hold stale VRAM, so a PSP replay shows noise and has no reference"
+  ]
+ },
+ {
   "name": "15923 UCES01184_0001 Lens flare effects",
   "source": "issue",
   "issue": 15923,
