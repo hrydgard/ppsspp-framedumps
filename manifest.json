@@ -12080,5 +12080,21 @@
   "pspReference": true,
   "pspDepth": false,
   "notes": []
+ },
+ {
+  "name": "ULES00869_0014 Silent Hill Origins flashlight shadow of the bed",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00869_0014",
+  "origin": "recorded in-game, the first hospital room with the flashlight on the bed",
+  "gameId": "ULES00869",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "Shadow mapping without depth textures, see ppsspp-re docs/silent-hill-origins-shadow-mapping.md and #16126.",
+   "Two frames: the game copies each frame to its display buffer at the start of the next one."
+  ]
  }
 ]
