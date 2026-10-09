@@ -11214,6 +11214,18 @@
   "notes": []
  },
  {
+  "name": "20867 ULUS10423_0001 Warriors Orochi 2 Sky gradient problem",
+  "source": "issue",
+  "issue": 20867,
+  "ppssppName": "ULUS10423_0001",
+  "gameId": "ULUS10423",
+  "gameIdSource": "file name",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "21079 UCUS98697_0001 Particle effects render strangely around the player enemies",
   "source": "issue",
   "issue": 21079,
