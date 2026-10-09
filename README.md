@@ -1,6 +1,6 @@
-# PPSSPP frame dumps
+# PPSSPP1042 frame dumps
 
-GE frame dumps (`.ppdmp`) of PSP games, together with what a real PSP renders for each of them. Most were
+GE1042 frame dumps (`.ppdmp`) of PSP games, together with what a real PSP renders for each of them. Most were
 attached to [PPSSPP](https://github.com/hrydgard/ppsspp) GitHub issues over the years; more are recorded
 directly. Use it to check PPSSPP's renderers against the
 hardware, compare one backend with another, or find out whether a change makes any game look different.
@@ -14,9 +14,9 @@ git clone https://github.com/hrydgard/ppsspp-framedumps.git
 ## What's here
 
 ```
-dumps/<name>.ppdmp           1009 frame dumps
-ref/<name>-psp.png           what a PSP displays for that dump (480x272), for 982 of them
-ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 962 of them
+dumps/<name>.ppdmp           1042 frame dumps
+ref/<name>-psp.png           what a PSP displays for that dump (480x272), for 1015 of them
+ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 994 of them
 manifest.json                one entry per dump (see below)
 renames.json                 the original file name of each dump -> its name here
 frametests.json              a config for PPSSPP's frametests.py, comparing against ref/
@@ -69,6 +69,8 @@ prefixing `<issue> ` if it belongs to an issue. Its references are named the sam
 
 `source` is `issue` for dumps from a GitHub issue (with `issue` set) and `recorded` for the others, which have
 `issue: null` and may say in `origin` where they came from (who recorded them, and where in the game).
+`frametests` marks the dumps taken from PPSSPP's frametests submodule (`Depth/`); their first note names the zip,
+and `renames.json` maps `frametests/Depth/<zip>/<file>` to the name here.
 `ppssppName` is the `<game ID>_<NNNN>` part of the name (null for the few dumps without a game ID).
 
 `gameIdSource` says how much to trust the ID:
