@@ -8272,10 +8272,7 @@
   "gameIdSource": "header",
   "dumpVersion": 6,
   "pspReference": true,
-  "pspDepth": true,
-  "notes": [
-   "the PSP reference is missing most of the speed gauge, likely something the recording didn't capture"
-  ]
+  "pspDepth": true
  },
  {
   "name": "15914 ULUS10428_0001 Cars Race O Rama brightness adaptation",
