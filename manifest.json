@@ -6887,9 +6887,9 @@
   "gameId": "ULAS42230",
   "gameIdSource": "header",
   "dumpVersion": 4,
-  "pspReference": false,
-  "pspDepth": false,
-  "notes": ["Attached to the issue as SSMMR2.zip; PSP reference not captured yet"]
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": ["Attached to the issue as SSMMR2.zip"]
  },
  {
   "name": "13980 NPJH50336_0001 Pro Yakyu Spirits 2011 2012 2013 2014 some graphics missing",
