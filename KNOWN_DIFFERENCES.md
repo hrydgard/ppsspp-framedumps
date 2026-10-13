@@ -58,7 +58,7 @@ All with `--dump-compat`. Checked on an Adreno 630, an Adreno 840 and a Mali-G71
 | 21776 NPJB40001_0001 Monster Hunter 3rd (47-131 px, every phone) | Z-fighting between surfaces at the same depth, where tiny differences in the computed depth flip the test |
 | 11601 Monster Hunter 3rd (330-501 px), 15005 ULUS10537_0001 Dragon Ball Z (194), other Monster Hunter dumps (24-106), 11123 GOW Chains of Olympus (11), without depth clamp | The same, between the fragment shader depth clamp and the hardware one |
 | 11399 UCES00019_0001 D3D11 and Vulkan depth clamp incorrectly without clip distance (13.8k), 11216 UCUS98703_0006 and _0003 Pursuit Force graphic issues (376, 32), without clip distances | Not looked into yet |
-| 18561 ULUS10537_0001 DBZ Tenkaichi Tag Team modded map (24k px), 16131 #16102147_0001 (12k), with clip and cull distances | The PSP drops triangles whose vertices land outside the screen range after near-plane clipping. The software clip path does that too (so it matches on GPUs without cull distances, like Apple's), the shader path draws them. The `CorrectCullAfterClip` compat flag would fix these, but no flag: DBZ's map is modded, and keeping the triangle looks better there; and #16102147 has no game ID |
+| 18561 ULUS10537_0001 DBZ Tenkaichi Tag Team modded map (24k px), with clip and cull distances | The PSP drops triangles whose vertices land outside the screen range after near-plane clipping. The software clip path does that too (so it matches on GPUs without cull distances, like Apple's), the shader path draws it. The `CorrectCullAfterClip` compat flag would fix it, but the map is modded, and keeping the triangle looks better |
 | 21763 ULUS10249_0002 Test Drive (7), 19960 ULET00417_0001 GTA clipping (10), 11376 ULES00968_0001 Flatout Water (18-85), 6531 NPJH50721_0001 Frontier Gate Boost (1), OpenGL on Android only | Not looked into |
 
 ## Dumps not to trust
@@ -66,6 +66,7 @@ All with `--dump-compat`. Checked on an Adreno 630, an Adreno 840 and a Mali-G71
 | Dumps | Why |
 |---|---|
 | 18879 NPJH50443 FF Type-0 | Looks suspicious |
+| 16131 #16102147_0001 Software renderer issues | A homebrew test rather than a game (no game ID) |
 | 11635 ULAS42260_0001 Monster Hunter Portable 3rd | Probably corrupt: the camera sits in a jumble of shards on every renderer, the PSP included |
 | 8390 NPJH50333 Kurohyou 2 | Looks suspicious, might be right |
 | 11100, 15923 (removed), 21641 (removed) Burnout Dominator | Old captures with state the game doesn't have; use ULES00703_0004 |

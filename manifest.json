@@ -8528,7 +8528,7 @@
   "dumpVersion": 6,
   "pspReference": true,
   "pspDepth": true,
-  "notes": []
+  "notes": ["Homebrew test, not a game; disregard (see KNOWN_DIFFERENCES)"]
  },
  {
   "name": "16131 NPJG90068_0001 Software renderer issues",
