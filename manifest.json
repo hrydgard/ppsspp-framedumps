@@ -3861,7 +3861,7 @@
   "dumpVersion": 3,
   "pspReference": true,
   "pspDepth": true,
-  "notes": []
+  "notes": ["Probably corrupt, disregard (see KNOWN_DIFFERENCES)"]
  },
  {
   "name": "11655 GE Frame Dump replay assert",
