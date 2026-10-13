@@ -67,3 +67,4 @@ All with `--dump-compat`. Checked on an Adreno 630, an Adreno 840 and a Mali-G71
 | 18879 NPJH50443 FF Type-0 | Looks suspicious |
 | 8390 NPJH50333 Kurohyou 2 | Looks suspicious, might be right |
 | 11100, 15923 (removed), 21641 (removed) Burnout Dominator | Old captures with state the game doesn't have; use ULES00703_0004 |
+| ULES00869_0014 Silent Hill Origins flashlight shadow of the bed, hardware renderers only (22k px; software matches the PSP) | Replay artifact, the game renders it right. Draw 226 clears only the top 224 rows of a new 8888 buffer at 0x04170000 whose memory aliases a 565 buffer and the depth buffer; the rows below keep that memory, which the hardware renderers, starting from no framebuffers, don't have. It reaches the screen through later copies as the flashlight: magenta on desktop Vulkan, missing on Adreno |
