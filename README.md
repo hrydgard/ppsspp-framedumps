@@ -155,11 +155,15 @@ It lands in `android/libs/arm64-v8a/ppsspp_headless`. With a device connected (U
 needed), render the set on it, render it on the desktop, and compare:
 
 ```bash
-python3 tools/render.py --adb --graphics vulkan       # out/android-vulkan/
-python3 tools/render.py --adb --graphics opengl       # out/android-opengl/
-python3 tools/render.py --graphics vulkan             # out/vulkan/, on the desktop
-python3 tools/compare.py out/vulkan out/android-vulkan --sort --heatmaps out/heat-android-vulkan
+python3 tools/render.py --adb --graphics vulkan --args=--dump-compat     # out/android-vulkan/
+python3 tools/render.py --adb --graphics opengl --args=--dump-compat     # out/android-opengl/
+python3 tools/render.py --graphics vulkan --args=--dump-compat --out out/vulkan-compat   # on the desktop
+python3 tools/compare.py out/vulkan-compat out/android-vulkan --sort --heatmaps out/heat-android-vulkan
 ```
+
+`--dump-compat` applies the game's `compat.ini` settings, which headless otherwise leaves out for dumps (they
+would skew a comparison with the PSP). Here the question is what the game looks like, and some games need
+their settings on every backend: Coded Arms' lava floor z-fights without `AccurateSplines`.
 
 `--adb` pushes the binary, PPSSPP's `assets/` and the dumps to `/data/local/tmp/ppsspp-framedumps`; the
 first time that's the whole 900 MB, later only what changed. The dumps then run one at a time from a script
