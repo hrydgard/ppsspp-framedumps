@@ -4,7 +4,7 @@
 #   python3 tools/render.py --headless ~/ppsspp/build/PPSSPPHeadless --graphics vulkan [--filter TEXT] [--out DIR]
 #
 # With --adb, renders them on an Android device instead, one at a time, into out/android-<graphics>/.
-import argparse, os, shlex, subprocess, sys, tempfile
+import argparse, os, shlex, subprocess, sys, tempfile, time
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,17 +26,33 @@ def render_on_device(args, dumps, out):
     adb(serial, 'shell', 'chmod 755 %s/ppsspp_headless' % q(dev))
     adb(serial, 'push', '--sync', os.path.join(PPSSPP, 'assets') + '/.', dev + '/assets')
     adb(serial, 'push', '--sync', os.path.join(ROOT, 'dumps') + '/.', dev + '/dumps')
-    lines = ['cd %s || exit 1' % q(dev), 'rm -f shots/*.png']
+    lines = ['cd %s || exit 1' % q(dev), 'rm -f shots/*.png done']
     for name in dumps:
         lines.append('timeout 60 ./ppsspp_headless %s --graphics=%s --screenshot-save=%s %s > /dev/null 2>&1' % (
             q('dumps/%s.ppdmp' % name), q(args.graphics), q('shots/%s.png' % name), args.args))
+    lines.append('touch done')
     with tempfile.NamedTemporaryFile('w', suffix='.sh', delete=False) as f:
         f.write('\n'.join(lines) + '\n')
     adb(serial, 'push', f.name, dev + '/render.sh')
     os.unlink(f.name)
     print('Rendering %d dumps on the device...' % len(dumps))
-    adb(serial, 'shell', 'sh %s/render.sh' % q(dev), check=False)
-    adb(serial, 'pull', dev + '/shots/.', out)
+    # Detached from the adb connection, so a USB hiccup doesn't kill the run: poll for it to finish instead.
+    adb(serial, 'shell', 'cd %s && rm -f done && nohup sh render.sh > render.log 2>&1 &' % q(dev))
+    while True:
+        time.sleep(15)
+        r = adb(serial, 'shell', 'cd %s && ls shots | wc -l && ls done' % q(dev), check=False)
+        if r.returncode != 0 and 'done' not in r.stdout:
+            if 'not found' in r.stderr or 'no devices' in r.stderr or 'offline' in r.stderr:
+                print('Lost the device, waiting for it to come back...')
+                adb(serial, 'wait-for-device', check=False)
+            continue
+        if r.stdout.split()[-1:] == ['done']:
+            break
+    for attempt in range(5):
+        if adb(serial, 'pull', dev + '/shots/.', out, check=False).returncode == 0:
+            break
+        print('Pull failed, waiting for the device...')
+        adb(serial, 'wait-for-device', check=False)
     return [name for name in dumps if not os.path.exists(os.path.join(out, name + '.png'))]
 
 def main():
