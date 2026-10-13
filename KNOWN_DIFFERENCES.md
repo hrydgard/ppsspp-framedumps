@@ -23,7 +23,7 @@ Not emulated on purpose for now. Options looked at (2026-10-09):
 | Dumps | Where |
 |---|---|
 | 11774 ULES01372 Metal Gear Solid Peace Walker (12 dumps, 15-20k) | Through-mode FIXA adds of 5 to green and blue in the 5551 frame: the PSP averages +3.6 and +1.3 |
-| 15716 ULJM05637 Shin Sangoku Musou Multi Raid 2 (109k) | Bloom composite, four additive through-mode passes into the 5551 frame |
+| 15716 ULJM05637 and 13968 ULAS42230 Shin Sangoku Musou Multi Raid 2 (109-114k) | Bloom composite, four additive through-mode passes into the 5551 frame |
 | 6273, 11397, 15015 ULUS10576 Fate/Extra (1-91k) | Glow built from 12 additive passes into a 5551 buffer |
 | 13950, 17033 God Eater Burst / God Eater 2 | Bloom feeds back on itself; the scene is about 4 levels bright before it |
 | 6963 UCES01242_0001, 15071 UCUS98649 SOCOM | Faint fog layers and a CLUT8 glow on a 5551 frame |
