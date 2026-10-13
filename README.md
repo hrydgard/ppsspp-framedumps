@@ -21,7 +21,7 @@ manifest.json                one entry per dump (see below)
 renames.json                 the original file name of each dump -> its name here
 frametests.json              a config for PPSSPP's frametests.py, comparing against ref/
 KNOWN_DIFFERENCES.md         differences left for later, grouped by cause
-tools/render.py              renders every dump with PPSSPPHeadless
+tools/render.py              renders every dump with PPSSPPHeadless, on the desktop or an Android device
 tools/compare.py             compares renders with the PSP references, or with each other
 ```
 
@@ -136,6 +136,39 @@ python3 ~/ppsspp/frametests.py frametests.json --filter="Pursuit Force"
 
 It uses a plain MSE limit, which suits the software renderer; for the hardware backends `tools/compare.py`
 says more.
+
+### On an Android device
+
+PPSSPP's headless build also runs on Android, from `adb shell`, with Vulkan and OpenGL ES. That checks the
+phone's GPU drivers, which is where Android rendering bugs tend to come from. Compare the device with the
+Vulkan render on a desktop rather than with the PSP references: the hardware backends never match those
+exactly, and what matters here is whether the device draws the same thing.
+
+Build the Android headless executable in the PPSSPP checkout, with the NDK version from
+`android/build.gradle.kts`:
+
+```bash
+cd ~/ppsspp/android && NDK=~/Library/Android/sdk/ndk/<version> ./ab.sh APP_ABI=arm64-v8a HEADLESS=1 SKIPAPP=1 -j8
+```
+
+It lands in `android/libs/arm64-v8a/ppsspp_headless`. With a device connected (USB debugging on; no root
+needed), render the set on it, render it on the desktop, and compare:
+
+```bash
+python3 tools/render.py --adb --graphics vulkan       # out/android-vulkan/
+python3 tools/render.py --adb --graphics opengl       # out/android-opengl/
+python3 tools/render.py --graphics vulkan             # out/vulkan/, on the desktop
+python3 tools/compare.py out/vulkan out/android-vulkan --sort --heatmaps out/heat-android-vulkan
+```
+
+`--adb` pushes the binary, PPSSPP's `assets/` and the dumps to `/data/local/tmp/ppsspp-framedumps`; the
+first time that's the whole 900 MB, later only what changed. The dumps then run one at a time from a script
+on the device, with no adb round trip each. `--adb SERIAL` picks a device when several are connected, and
+`--device-headless` another binary. It finds PPSSPP through `$PPSSPP` or `../ppsspp`.
+
+PPSSPP's own frametests can do the same in one step: `python3 frametests.py frametests/frametests.json --adb`,
+from the PPSSPP checkout, runs each dump on the device with both backends, compares it with the host's Vulkan
+render, and writes an HTML report (see `docs/frametest.md`).
 
 ### Look at one dump
 
