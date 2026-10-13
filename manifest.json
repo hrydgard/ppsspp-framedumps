@@ -12706,5 +12706,237 @@
   "notes": [
    "From PPSSPP's frametests (Depth/NBA 2K12 ULUS10585_0001.zip)."
   ]
+ },
+ {
+  "name": "UCES00279_0001 Killzone Liberation main menu",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "UCES00279_0001",
+  "gameId": "UCES00279",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "UCES00279_0002 Killzone Liberation trench battle",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "UCES00279_0002",
+  "gameId": "UCES00279",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00284_0001 Metal Gear Acid 2 dialogue",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00284_0001",
+  "gameId": "ULES00284",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "The display shows a buffer this frame doesn't draw, so the PSP reference is black. The frame is in the 5551 buffer at 0x04000000 (run.py --display=04000000,512,1)."
+  ]
+ },
+ {
+  "name": "ULES00339_0002 Me and My Katamari dialogue",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00339_0002",
+  "gameId": "ULES00339",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00366_0001 Pirates of the Caribbean prison spotlights",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00366_0001",
+  "gameId": "ULES00366",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00455_0001 Tiger Woods PGA Tour 07 golfer closeup",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00455_0001",
+  "gameId": "ULES00455",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00455_0002 Tiger Woods PGA Tour 07 tee shot",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00455_0002",
+  "gameId": "ULES00455",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00897_0001 Jackass The Game pachinko precipice",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00897_0001",
+  "gameId": "ULES00897",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES00972_0001 Aliens vs Predator Requiem night street",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00972_0001",
+  "gameId": "ULES00972",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01275_0001 Need for Speed Shift car select",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01275_0001",
+  "gameId": "ULES01275",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01275_0002 Need for Speed Shift race",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01275_0002",
+  "gameId": "ULES01275",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01367_0001 Assassins Creed Bloodlines title screen",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01367_0001",
+  "gameId": "ULES01367",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01367_0002 Assassins Creed Bloodlines Animus tutorial",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01367_0002",
+  "gameId": "ULES01367",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01367_0003 Assassins Creed Bloodlines foggy corridor",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01367_0003",
+  "gameId": "ULES01367",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01367_0004 Assassins Creed Bloodlines climbing tutorial",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01367_0004",
+  "gameId": "ULES01367",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULES01372_0001 Metal Gear Solid Peace Walker tutorial soldiers",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES01372_0001",
+  "gameId": "ULES01372",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULJS00165_0001 Gundam vs Gundam battle",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULJS00165_0001",
+  "gameId": "ULJS00165",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": [
+   "Not replayable on the PSP: the dump's data needs 29.9 MB, the replayer has 22.3 MB free. No PSP reference."
+  ]
+ },
+ {
+  "name": "ULUS10197_0001 Tony Hawks Project 8 choose your style",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULUS10197_0001",
+  "gameId": "ULUS10197",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULUS10197_0002 Tony Hawks Project 8 street",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULUS10197_0002",
+  "gameId": "ULUS10197",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
  }
 ]

@@ -1,6 +1,6 @@
-# PPSSPP1042 frame dumps
+# PPSSPP frame dumps
 
-GE1042 frame dumps (`.ppdmp`) of PSP games, together with what a real PSP renders for each of them. Most were
+GE frame dumps (`.ppdmp`) of PSP games, together with what a real PSP renders for each of them. Most were
 attached to [PPSSPP](https://github.com/hrydgard/ppsspp) GitHub issues over the years; more are recorded
 directly. Use it to check PPSSPP's renderers against the
 hardware, compare one backend with another, or find out whether a change makes any game look different.
@@ -14,9 +14,9 @@ git clone https://github.com/hrydgard/ppsspp-framedumps.git
 ## What's here
 
 ```
-dumps/<name>.ppdmp           1042 frame dumps
-ref/<name>-psp.png           what a PSP displays for that dump (480x272), for 1015 of them
-ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for 994 of them
+dumps/<name>.ppdmp           the frame dumps
+ref/<name>-psp.png           what a PSP displays for that dump (480x272), for nearly all of them
+ref/<name>-psp-depth.bin     the PSP's depth buffer after the frame, for nearly all of them
 manifest.json                one entry per dump (see below)
 renames.json                 the original file name of each dump -> its name here
 frametests.json              a config for PPSSPP's frametests.py, comparing against ref/
@@ -187,12 +187,30 @@ PPSSPP's GE debugger.
 
 ## Adding dumps
 
+New dumps can be dropped in `new/` with the name PPSSPP gave them, to be captured and moved out later.
+
 1. Keep the name PPSSPP gave the dump, add a short description of what it shows, put `<issue> ` in front if it
-   came from an issue (with a `_NNNN` not yet used for that issue and game), and put it in `dumps/`.
-2. If you have a PSP, replay it there with `utils/ppdmp-playback` and save the screenshot as
-   `ref/<name>-psp.png` (and the depth as `ref/<name>-psp-depth.bin`).
-3. Add an entry to `manifest.json`, with `source` `issue` or `recorded`.
+   came from an issue (with a `_NNNN` not yet used for that issue and game), and put it in `dumps/`. The game's
+   title is in PPSSPP's `assets/redump.csv`: look the ID up in the Serial column, where it's written with a
+   dash (`ULES-00284` for `ULES00284`).
+2. If you have a PSP, replay it there with pspautotests' `utils/ppdmp-playback` (see PPSSPP's
+   `docs/frametest.md`), which writes `NAME-psp.png` and `NAME-psp-depth.bin`:
+
+   ```bash
+   cd ~/ppsspp/pspautotests
+   python3 utils/ppdmp-playback/run.py --out /tmp/shots --timeout 20 --headless ../build/PPSSPPHeadless new/*.ppdmp
+   ```
+
+   Copy them to `ref/<name>-psp.png` and `ref/<name>-psp-depth.bin`. With `--headless` it also prints the MSE
+   against PPSSPP's software renderer, which should be 0 or close to it; a bigger one is worth a look.
+3. Add an entry to `manifest.json`, with `source` `issue` or `recorded`. The dump's version and game ID are in
+   its header, right after the `PPSSPPGE` magic.
 4. Check that it isn't a duplicate: a dump that renders the same frame as one already here adds nothing.
+
+Two things can get in the way. A dump can be too big for the replayer, which has about 22 MB of the PSP's
+memory to hold it: then it has no reference (`pspReference` false), and a note says so. And the display can
+show a buffer the frame doesn't draw into (Metal Gear Acid 2): the reference is then a black frame, which is
+still what the PSP shows, and a note names the buffer that holds the frame, which `run.py --display` captures.
 
 ## Things to know
 
