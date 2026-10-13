@@ -45,6 +45,21 @@ The GE filters with 4-bit weights and truncates twice. GPUs filter more finely.
 |---|---|
 | 8481 UCES00786_0003 ATV Offroad Fury Pro, OpenGL only (+1k) | OpenGL without clip control stores depth as 0.5..1, losing a bit near 0 (float depth on Apple) |
 
+## Between GPUs
+
+Differences between one GPU and another rather than from the PSP, left as they are: Android devices
+against desktop Vulkan (`render.py --adb`, PPSSPP's `frametests.py --adb`), and the fallbacks for GPUs
+without clip distances, cull distances or depth clamp against a GPU with them (`--disable-gpu-features`).
+All with `--dump-compat`. Checked on an Adreno 630, an Adreno 840 and a Mali-G71 (2026-10-13).
+
+| Dumps | Where |
+|---|---|
+| 10914 ULJM05021_0005 Sengoku Cannon (172 px on Adreno, 213 on Mali) | The HUD bar at the bottom right: a CLUT8 texture at exactly 2:1 with nearest filtering, so every pixel center falls on a texel boundary, and its top edge on a pixel center. GPUs round those differently; desktop Vulkan and the software renderer agree |
+| 21776 NPJB40001_0001 Monster Hunter 3rd (47-131 px, every phone) | Z-fighting between surfaces at the same depth, where tiny differences in the computed depth flip the test |
+| 11601 Monster Hunter 3rd (330-501 px), 15005 ULUS10537_0001 Dragon Ball Z (194), other Monster Hunter dumps (24-106), 11123 GOW Chains of Olympus (11), without depth clamp | The same, between the fragment shader depth clamp and the hardware one |
+| 11399 UCES00019_0001 D3D11 and Vulkan depth clamp incorrectly without clip distance (13.8k), 11216 UCUS98703_0006 and _0003 Pursuit Force graphic issues (376, 32), without clip distances | Not looked into yet |
+| 21763 ULUS10249_0002 Test Drive (7), 19960 ULET00417_0001 GTA clipping (10), 11376 ULES00968_0001 Flatout Water (18-85), 6531 NPJH50721_0001 Frontier Gate Boost (1), OpenGL on Android only | Not looked into |
+
 ## Dumps not to trust
 
 | Dumps | Why |
