@@ -6880,6 +6880,18 @@
   "notes": []
  },
  {
+  "name": "13968 ULAS42230_0001 Shin Sangoku Musou Multi Raid 2 Buffered Rendering on Vulkan",
+  "source": "issue",
+  "issue": 13968,
+  "ppssppName": "ULAS42230_0001",
+  "gameId": "ULAS42230",
+  "gameIdSource": "header",
+  "dumpVersion": 4,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": ["Attached to the issue as SSMMR2.zip; PSP reference not captured yet"]
+ },
+ {
   "name": "13980 NPJH50336_0001 Pro Yakyu Spirits 2011 2012 2013 2014 some graphics missing",
   "source": "issue",
   "issue": 13980,
