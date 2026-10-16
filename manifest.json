@@ -11277,18 +11277,6 @@
   "notes": []
  },
  {
-  "name": "20799 ULES00151_0001 Strange glitched lines coming from passengers of moving vehicles",
-  "source": "issue",
-  "issue": 20799,
-  "ppssppName": "ULES00151_0001",
-  "gameId": "ULES00151",
-  "gameIdSource": "header",
-  "dumpVersion": 6,
-  "pspReference": true,
-  "pspDepth": true,
-  "notes": []
- },
- {
   "name": "20799 ULES00151_0002 Strange glitched lines coming from passengers of moving vehicles",
   "source": "issue",
   "issue": 20799,
