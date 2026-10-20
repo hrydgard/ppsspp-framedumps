@@ -11565,6 +11565,18 @@
   "notes": []
  },
  {
+  "name": "22104 ULES00196_0001 NFS Most Wanted Music graphical analyzer missing graphics",
+  "source": "issue",
+  "issue": 22104,
+  "ppssppName": "ULES00196_0001",
+  "gameId": "ULES00196",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
   "name": "22335 ULJS00281_0001 Some weapons are really huge in Gundam Assault Survive",
   "source": "issue",
   "issue": 22335,
