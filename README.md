@@ -70,7 +70,9 @@ prefixing `<issue> ` if it belongs to an issue. Its references are named the sam
 `source` is `issue` for dumps from a GitHub issue (with `issue` set) and `recorded` for the others, which have
 `issue: null` and may say in `origin` where they came from (who recorded them, and where in the game).
 `frametests` marks the dumps taken from PPSSPP's frametests submodule (`Depth/`); their first note names the zip,
-and `renames.json` maps `frametests/Depth/<zip>/<file>` to the name here.
+and `renames.json` maps `frametests/Depth/<zip>/<file>` to the name here. Dumps added from a local collection
+of old issue attachments and recordings map from `library/<path>` (with a zip's name as a directory), and the
+recorded ones among them name that path in `origin`.
 `ppssppName` is the `<game ID>_<NNNN>` part of the name (null for the few dumps without a game ID).
 
 `gameIdSource` says how much to trust the ID:
@@ -82,6 +84,7 @@ and `renames.json` maps `frametests/Depth/<zip>/<file>` to the name here.
 | `same issue` | taken from another dump of the same issue |
 | `issue` | written in the GitHub issue |
 | `title match` | the game named in the issue title, looked up in PPSSPP's `assets/redump.csv` (Europe preferred, then USA, then Japan when the title doesn't say) - a guess |
+| `same folder` | taken from the other dumps it was kept with |
 | `null` | unknown; the name has no ID |
 
 `notes` lists anything unusual: dumps that hang the PSP replayer and so have no reference, and references that
