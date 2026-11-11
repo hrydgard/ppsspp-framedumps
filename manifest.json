@@ -13953,5 +13953,57 @@
   "pspReference": true,
   "pspDepth": true,
   "notes": []
+ },
+ {
+  "name": "UCES01264_0001 LittleBigPlanet main menu planets",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "UCES01264_0001",
+  "origin": "recorded in-game, the main menu",
+  "gameId": "UCES01264",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "UCES01264_0002 LittleBigPlanet savanna level",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "UCES01264_0002",
+  "origin": "recorded in-game, a savanna level",
+  "gameId": "UCES01264",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "UCUS98744_0001 LittleBigPlanet lava level popit menu",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "UCUS98744_0001",
+  "origin": "recorded in-game, a level over lava with the popit open",
+  "gameId": "UCUS98744",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "VSHM01150_0001 XMB Game menu Saved Data Utility",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "VSHM01150_0001",
+  "origin": "recorded in the XMB, the Game menu",
+  "gameId": "VSHM01150",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
  }
 ]
