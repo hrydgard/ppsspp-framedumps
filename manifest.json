@@ -14005,5 +14005,102 @@
   "pspReference": true,
   "pspDepth": true,
   "notes": []
+ },
+ {
+  "name": "ULES00869_0015 Silent Hill Origins ladder shadow",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00869_0015",
+  "origin": "recorded in-game from a savestate, the flashlight on a ladder",
+  "gameId": "ULES00869",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "Shadow mapping without depth textures, like ULES00869_0014.",
+   "Hardware backends need --dump-compat (SelfTextureCopyTracksDraws and TolerantDepthEqual)."
+  ]
+ },
+ {
+  "name": "ULES00869_0016 Silent Hill Origins elevator door shadow flicker",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00869_0016",
+  "origin": "recorded in-game from a savestate, by the elevator, on a frame where the shadow flickered",
+  "gameId": "ULES00869",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": [
+   "The elevator door failed the EQUAL depth pass of the shadows on NVIDIA Vulkan, and went dark for the frame.",
+   "Hardware backends need --dump-compat (SelfTextureCopyTracksDraws and TolerantDepthEqual)."
+  ]
+ },
+ {
+  "name": "NPJH50832_0001 God Eater 2 battle with sky glow 1",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "NPJH50832_0001",
+  "origin": "recorded in-game, a battle in ruins",
+  "gameId": "NPJH50832",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "NPJH50832_0002 God Eater 2 battle with sky glow 2",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "NPJH50832_0002",
+  "origin": "recorded in-game, a battle in ruins",
+  "gameId": "NPJH50832",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "NPJH50832_0003 God Eater 2 battle with sky glow 3",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "NPJH50832_0003",
+  "origin": "recorded in-game, a battle in ruins",
+  "gameId": "NPJH50832",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "NPJH50832_0004 God Eater 2 battle with sky glow 4",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "NPJH50832_0004",
+  "origin": "recorded in-game, a battle in ruins",
+  "gameId": "NPJH50832",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "NPJH50832_0005 God Eater 2 battle with sky glow 5",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "NPJH50832_0005",
+  "origin": "recorded in-game, a battle in ruins",
+  "gameId": "NPJH50832",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
  }
 ]
