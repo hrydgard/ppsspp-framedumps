@@ -14102,5 +14102,41 @@
   "pspReference": true,
   "pspDepth": true,
   "notes": []
+ },
+ {
+  "name": "23129 ULES01352_0003 Silent Hill Shattered Memories black flashlight shadows",
+  "source": "issue",
+  "issue": 23129,
+  "ppssppName": "ULES01352_0003",
+  "gameId": "ULES01352",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "23129 ULES01352_0004 Silent Hill Shattered Memories black flashlight shadows",
+  "source": "issue",
+  "issue": 23129,
+  "ppssppName": "ULES01352_0004",
+  "gameId": "ULES01352",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "23129 ULES01352_0005 Silent Hill Shattered Memories black flashlight shadows",
+  "source": "issue",
+  "issue": 23129,
+  "ppssppName": "ULES01352_0005",
+  "gameId": "ULES01352",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
  }
 ]
