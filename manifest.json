@@ -14124,5 +14124,35 @@
   "pspReference": true,
   "pspDepth": true,
   "notes": []
+ },
+ {
+  "name": "ULES00938_0001 Spider-Man 3 wall colors from offscreen vertices",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00938_0001",
+  "origin": "recorded in-game, a corridor with a wall close to the camera on the left",
+  "gameId": "ULES00938",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": [
+   "no PSP reference yet"
+  ]
+ },
+ {
+  "name": "ULES00938_0002 Spider-Man 3 wall",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULES00938_0002",
+  "origin": "recorded in-game, the same corridor facing the wall",
+  "gameId": "ULES00938",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": false,
+  "pspDepth": false,
+  "notes": [
+   "no PSP reference yet"
+  ]
  }
 ]
