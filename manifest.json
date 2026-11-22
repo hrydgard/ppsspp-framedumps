@@ -220,20 +220,6 @@
   "notes": []
  },
  {
-  "name": "4179 UCJS10001_0001 Everybody Golf Graphics problem",
-  "source": "issue",
-  "issue": 4179,
-  "ppssppName": "UCJS10001_0001",
-  "gameId": "UCJS10001",
-  "gameIdSource": "header",
-  "dumpVersion": 5,
-  "pspReference": false,
-  "pspDepth": false,
-  "notes": [
-   "timed out on the PSP replayer"
-  ]
- },
- {
   "name": "4472 ULES01402_0001 Split Second Velocity Colour Issue",
   "source": "issue",
   "issue": 4472,
