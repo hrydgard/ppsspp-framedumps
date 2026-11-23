@@ -14154,5 +14154,31 @@
   "notes": [
    "no PSP reference yet"
   ]
+ },
+ {
+  "name": "ULUS10285_0001 Silent Hill Origins welcome sign in fog",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULUS10285_0001",
+  "origin": "recorded in-game, at the welcome to Silent Hill sign",
+  "gameId": "ULUS10285",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
+ },
+ {
+  "name": "ULUS10285_0002 Silent Hill Origins welcome sign street lamp",
+  "source": "recorded",
+  "issue": null,
+  "ppssppName": "ULUS10285_0002",
+  "origin": "recorded in-game, further back from the welcome sign, with a street lamp above it",
+  "gameId": "ULUS10285",
+  "gameIdSource": "header",
+  "dumpVersion": 6,
+  "pspReference": true,
+  "pspDepth": true,
+  "notes": []
  }
 ]
